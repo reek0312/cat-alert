@@ -1,0 +1,5 @@
+train: /kaggle/working/training_data/images/train
+val: /kaggle/working/training_data/images/val
+
+nc: 1
+names: ['Cat']
