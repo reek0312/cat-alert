@@ -1,5 +1,4 @@
 # Real-Time Feral Cat Detection and Audio Alert System  
----
 
 This project is a real-time object detection system designed to identify feral cats near your door using a webcam. The system generates an audio alert in Bengali to notify you when a cat is detected.
 
@@ -7,14 +6,12 @@ This project is a real-time object detection system designed to identify feral c
 
 
 ## Features
---- 
 
 - **Real-Time Detection**: Utilizes YOLOv5 for efficient and accurate cat detection.  
 - **Custom Audio Alert**: Plays a audio(in Bengali) alert ("A cat is here!") whenever a cat is detected.  
 - **Simple Setup**: Requires only a webcam and minimal setup.  
 
 ## Usage
----
 
 1. Clone the yolov5 repository:  
    ```bash
@@ -40,7 +37,6 @@ This project is a real-time object detection system designed to identify feral c
 
 
 ### Known Issues
----
 
 - **PosixPath Issue with Saved Weights on Windows**: 
   When running the model with saved weights (best.pt) on a Windows machine, you might encounter a "NotImplementedError" due to a `PosixPath` object in the model checkpoint. This is caused by the "opt" dictionary in the checkpoint containing a key "evolve_population" with a value specific to Unix-based systems. The issue does not occur when using pretrained weights provided by the yolov5(e.g. yolov5s.pt). 
